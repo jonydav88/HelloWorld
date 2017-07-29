@@ -1,0 +1,172 @@
+----------------------------------------
+Timestamp: 25/03/2014 12:24:51 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 12:25:11 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 12:27:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 12:27:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 01:28:59 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 01:29:01 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.AddressAlreadyInUseException: Ya hay una escucha en el extremo IP 0.0.0.0:4000. Asegúrese de que no está intentando usar este extremo varias veces en la aplicación y de que no hay ninguna otra aplicación escuchando en este extremo. ---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing()
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 01:29:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 01:29:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 05:40:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 05:40:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 25/03/2014 05:51:53 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv2-clp 
+
+Message: NHibernate.InstantiationException: Cannot instantiate abstract class or interface: POS.Model.Pago.PropuestaDePago
+   en NHibernate.Tuple.PocoInstantiator.Instantiate()
+   en NHibernate.Tuple.PocoInstantiator.Instantiate(Object id)
+   en NHibernate.Tuple.Entity.AbstractEntityTuplizer.Instantiate(Object id)
+   en NHibernate.Persister.Entity.AbstractEntityPersister.Instantiate(Object id, EntityMode entityMode)
+   en NHibernate.Impl.SessionImpl.Instantiate(IEntityPersister persister, Object id)
+   en NHibernate.Impl.SessionImpl.Instantiate(String clazz, Object id)
+   en NHibernate.Loader.Loader.InstanceNotYetLoaded(IDataReader dr, Int32 i, ILoadable persister, EntityKey key, LockMode lockMode, String rowIdAlias, EntityKey optionalObjectKey, Object optionalObject, IList hydratedObjects, ISessionImplementor session)
+   en NHibernate.Loader.Loader.GetRow(IDataReader rs, ILoadable[] persisters, EntityKey[] keys, Object optionalObject, EntityKey optionalObjectKey, LockMode[] lockModes, IList hydratedObjects, ISessionImplementor session)
+   en NHibernate.Loader.Loader.GetRowFromResultSet(IDataReader resultSet, ISessionImplementor session, QueryParameters queryParameters, LockMode[] lockModeArray, EntityKey optionalObjectKey, IList hydratedObjects, EntityKey[] keys, Boolean returnProxies)
+   en NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   en NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   en NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   en NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   en NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   en NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   en NHibernate.Collection.AbstractPersistentCollection.Read()
+   en NHibernate.Collection.Generic.PersistentGenericSet`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   en System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   en POS.Model.Credito.CreditoPersonalBase.get_AdeudaAnticipo() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Credito\CreditoPersonalBase.cs:línea 339
+   en POS.Model.Credito.CreditoPersonalBase.get_Estado() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Credito\CreditoPersonalBase.cs:línea 180
+   en POS.Presenter.Credito.Cliente.ModificandoDatosDeClientePresenter.<MostrarCreditos>b__0(CreditoPersonalBase c) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\Cliente\ModificandoDatosDeClientePresenter.cs:línea 80
+   en System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   en POS.Presenter.Credito.Cliente.ModificandoDatosDeClientePresenter.MostrarCreditos() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\Cliente\ModificandoDatosDeClientePresenter.cs:línea 80
+   en POS.UserInterface.Credito.Cliente.CreandoClientes.CmbFiltroEstadoCredito_SelectedIndexChanged(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Credito\Cliente\CreandoClientes.cs:línea 4690
+   en System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   en System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   en System.Windows.Forms.ListControl.set_SelectedValue(Object value)
+   en POS.UserInterface.Credito.Cliente.CreandoClientes.set_EstadoCredito(Nullable`1 value) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Credito\Cliente\CreandoClientes.cs:línea 3072
+   en POS.Presenter.Credito.Cliente.ModificandoDatosDeClientePresenter.InicializarComboFiltroPorEstadoCredito() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\Cliente\ModificandoDatosDeClientePresenter.cs:línea 371
+   en POS.UserInterface.Credito.Cliente.CreandoClientes.TbcCliente_SelectedIndexChanged(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Credito\Cliente\CreandoClientes.cs:línea 4732
+   en System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   en System.Windows.Forms.TabControl.WmSelChange()
+   en System.Windows.Forms.TabControl.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------

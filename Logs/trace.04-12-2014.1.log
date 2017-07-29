@@ -1,0 +1,40 @@
+﻿----------------------------------------
+Timestamp: 18/11/2014 06:22:43 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: SRV2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18/11/2014 06:22:45 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: SRV2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18/11/2014 06:41:22 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Titan  
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18/11/2014 06:41:23 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Titan 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

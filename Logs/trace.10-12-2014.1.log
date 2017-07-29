@@ -1,0 +1,446 @@
+----------------------------------------
+Timestamp: 09/12/2014 12:51:10 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 12:51:11 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 12:58:54 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 12:58:54 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 01:32:00 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 01:32:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:00:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:00:03 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:03:22 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:03:23 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:04:57 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:04:58 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:11:20 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:11:20 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:12:50 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:12:51 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:16:06 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:16:07 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:43:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 02:43:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 05:29:37 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 05:29:38 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 05:34:52 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: NHibernate.NonUniqueObjectException: a different object with the same identifier value was already associated with the session: 41, of entity: POS.Model.Sucursal
+   en NHibernate.Engine.StatefulPersistenceContext.CheckUniqueness(EntityKey key, Object obj)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollectionElements(Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollection(Object child, CascadeStyle style, Object anything, CollectionType type)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollectionElements(Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollection(Object child, CascadeStyle style, Object anything, CollectionType type)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollectionElements(Object child, CollectionType collectionType, CascadeStyle style, IType elemType, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeCollection(Object child, CascadeStyle style, Object anything, CollectionType type)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.CascadeOnUpdate(SaveOrUpdateEvent event, IEntityPersister persister, Object entity)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformUpdate(SaveOrUpdateEvent event, Object entity, IEntityPersister persister)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsDetached(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(String entityName, Object obj)
+   en NHibernate.Engine.CascadingAction.SaveUpdateCascadingAction.Cascade(IEventSource session, Object child, String entityName, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeToOne(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeAssociation(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeProperty(Object child, IType type, CascadeStyle style, Object anything, Boolean isCascadeDeleteEnabled)
+   en NHibernate.Engine.Cascade.CascadeOn(IEntityPersister persister, Object parent, Object anything)
+   en NHibernate.Event.Default.AbstractSaveEventListener.CascadeBeforeSave(IEventSource source, IEntityPersister persister, Object entity, Object anything)
+   en NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   en NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   en NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event)
+   en POS.DataAccess.RelacionSucursalEventListener.EntityIsTransient(SaveOrUpdateEvent evt) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.DataAccess\RelacionSucursalEventListener.cs:línea 31
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.FireSaveOrUpdate(SaveOrUpdateEvent event)
+   en NHibernate.Impl.SessionImpl.SaveOrUpdate(Object obj)
+   en ISessionProxy73a6cba895a5497c9744c1994768e847.InvocationSaveOrUpdate_381.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy73a6cba895a5497c9744c1994768e847.SaveOrUpdate(Object obj)
+   en POS.DataAccess.NHibernate.AbstractNHibernateDao`2.SaveOrUpdate(Entidad entity) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.DataAccess\NHibernate\AbstractNHibernateDao.cs:línea 160
+   en POS.Business.Stock.StockManager.MoverStockLocal(Articulo articulo, Int32 cantidad, EstadoMercaderia estadoOrigen, EstadoMercaderia estadoDestino, Deposito depositoOrigen, Deposito depositoDestino, TipoMovimientoStock tipo, String observaciones, Comprobante comprobante) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 1519
+   en POS.Business.Stock.StockManager.MoverStock(Articulo articulo, Int32 cantidad, EstadoMercaderia estadoOrigen, EstadoMercaderia estadoDestino, Deposito depositoOrigen, Deposito depositoDestino, TipoMovimientoStock tipo, Comprobante comprobante, String observaciones) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 259
+   en POS.Business.Stock.StockManager.MoverStock(Articulo articulo, Int32 cantidad, EstadoMercaderia estadoOrigen, EstadoMercaderia estadoDestino, Deposito depositoOrigen, Deposito depositoDestino, TipoMovimientoStock tipo, Comprobante comprobante) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 234
+   en POS.Business.Stock.StockManager.MoverStock(Articulo articulo, Int32 cantidad, EstadoMercaderia estadoOrigen, EstadoMercaderia estadoDestino, Deposito deposito, TipoMovimientoStock tipo, Comprobante comprobante) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 223
+   en POS.Business.Stock.StockManager.AgregarArticulosAlPresupuesto(Articulo articulo, Int32 cantidad, Venta presupuesto, ParArticuloSucursal parArticuloSucursal, IDictionary`2 cantidadesNuevasArticulos, IEnumerable`1 listaReservasActivas, Sucursal sucursalActual, Boolean muestra) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 1742
+   en POS.Business.Stock.StockManager.AjustarStockPresupuestoArticulosAgregados(IDictionary`2 cantidadesNuevasArticulos, Venta presupuesto, IEnumerable`1 articulosAgregados, IEnumerable`1 listaReservasActivas, Sucursal sucursalActual, Boolean muestra) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 1671
+   en POS.Business.Stock.StockManager.AjustarStockPresupuesto(IDictionary`2 cantidadesNuevasArticulos, IDictionary`2 cantidadesOriginalesArticulos, Venta presupuesto, Boolean muestra) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 1567
+   en POS.Business.Stock.StockManager.ActualizarStockPresupuesto(Venta presupuesto, CantidadesDeVenta cantidadesOriginalesDeVenta) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\StockManager.cs:línea 408
+   en POS.Business.VentaManager.FinalizarPresupuesto(Venta presupuesto, CantidadesDeVenta cantidadesOriginales) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\VentaManager.cs:línea 312
+   en IVentaManagerProxyf4e0986fa1c24f6a84c898fc7b60b4d8.InvocationFinalizarPresupuesto_52.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en IVentaManagerProxyf4e0986fa1c24f6a84c898fc7b60b4d8.FinalizarPresupuesto(Venta presupuesto, CantidadesDeVenta cantidadesOriginales)
+   en POS.Presenter.Ventas.SeleccionandoClientePresenter.FinalizarPresupuesto(Venta presupuesto) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\SeleccionandoClientePresenter.cs:línea 133
+   en POS.UserInterface.Ventas.SeleccionandoCliente.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\SeleccionandoCliente.cs:línea 317
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.PerformClick()
+   en System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   en System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   en System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   en System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 05:55:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 05:55:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 06:04:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 06:04:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 06:07:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/12/2014 06:07:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

@@ -1,0 +1,393 @@
+----------------------------------------
+Timestamp: 20/10/2014 12:00:50 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 12:00:51 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 12:34:28 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 01:03:39 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 01:27:29 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 01:54:22 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 02:30:34 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 02:59:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 02:59:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 03:09:27 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 03:53:46 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: uNhAddIns.SessionEasier.Conversations.ConversationException: Exception during persistent conversation FlushAndPause:not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero ---> NHibernate.PropertyValueException: not-null property references a null or transient valuePOS.Model.ReciboDevolucionTransitorio.Dinero
+   en NHibernate.Engine.Nullability.CheckNullability(Object[] values, IEntityPersister persister, Boolean isUpdate)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.ScheduleUpdate(FlushEntityEvent event)
+   en NHibernate.Event.Default.DefaultFlushEntityEventListener.OnFlushEntity(FlushEntityEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEntities(FlushEvent event)
+   en NHibernate.Event.Default.AbstractFlushingEventListener.FlushEverythingToExecutions(FlushEvent event)
+   en NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)
+   en NHibernate.Impl.SessionImpl.Flush()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.InvocationFlush_359.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.TransactionProtectionWrapper.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ISessionProxy5eef6456c75a476ba285a16deae86147.Flush()
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.FlushAndCommit(ISession session)
+   en uNhAddIns.SessionEasier.Conversations.NhConversation.DoFlushAndPause()
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.EncloseWithExceptionManagement(ConversationAction actionType, ConvAction action)
+   en uNhAddIns.SessionEasier.Conversations.AbstractConversation.FlushAndPause()
+   en uNhAddIns.Adapters.Common.AbstractConversationInterceptor.AfterMethodExecution(MethodInfo methodInfo)
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICajaManagerProxy3def672d0edb41a2a6a513b5be359b63.RetiroDeFondosEfectivo(Caja caja, ConteoDeCaja conteoDeCaja, Usuario usuarioAutorizo)
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Aceptar(Usuario usuarioQueAutorizo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 78
+   en POS.UserInterface.Caja.RetiroDeFondos.MostrarPopUpAutorizacion(Permiso permiso) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 103
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.Autorizar(Pantalla pantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 66
+   en POS.UserInterface.Caja.RetiroDeFondos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\RetiroDeFondos.cs:línea 121
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 07:53:03 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 20/10/2014 07:53:04 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

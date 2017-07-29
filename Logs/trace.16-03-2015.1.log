@@ -1,0 +1,121 @@
+----------------------------------------
+Timestamp: 13/03/2015 07:08:33 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 13/03/2015 07:08:35 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.CommunicationException: Error de TCP (10013: Intento de acceso a un socket no permitido por sus permisos de acceso) al escuchar en el extremo IP=0.0.0.0:4000. ---> System.Net.Sockets.SocketException: Intento de acceso a un socket no permitido por sus permisos de acceso
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 13/03/2015 07:08:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 13/03/2015 07:08:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 13/03/2015 07:31:47 p.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 13/03/2015 07:31:48 p.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2015 11:41:42 a.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2015 11:41:43 a.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2015 02:32:19 p.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2015 02:32:20 p.m.
+Category: Information
+Severity: Information
+Machine: JONATAN
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

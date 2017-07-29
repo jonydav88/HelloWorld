@@ -1,0 +1,241 @@
+----------------------------------------
+Timestamp: 22/12/2014 06:13:53 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 22/12/2014 06:13:53 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 11:49:46 a.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 11:49:48 a.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.AddressAlreadyInUseException: Ya hay una escucha en el extremo IP 0.0.0.0:4000. Asegúrese de que no está intentando usar este extremo varias veces en la aplicación y de que no hay ninguna otra aplicación escuchando en este extremo. ---> System.Net.Sockets.SocketException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 11:49:48 a.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 11:49:48 a.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 01:07:33 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 01:07:33 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 02:46:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 02:46:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:05:14 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:05:14 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:08:15 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:08:16 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:48:33 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 03:48:33 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 04:14:50 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 04:14:51 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 04:19:34 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 04:19:34 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 05:23:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 23/12/2014 05:23:18 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

@@ -1,0 +1,89 @@
+----------------------------------------
+Timestamp: 14/03/2014 12:28:40 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 12:28:42 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 12:31:57 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 12:31:58 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 02:36:44 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: NHibernate.InstantiationException: Cannot instantiate abstract class or interface: POS.Model.CobroPorCuenta
+   en System.ComponentModel.ReflectPropertyDescriptor.SetValue(Object component, Object value)
+   en System.Windows.Forms.RadioButton.PerformAutoUpdates(Boolean tabbedInto)
+   en System.Windows.Forms.RadioButton.set_Checked(Boolean value)
+   en POS.UserInterface.CobrandoPorCaja.SeleccionarTodos() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\CobrandoPorCaja.cs:línea 141
+   en POS.Presenter.Caja.CobrandoPorCajaPresenter.OnViewShown() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\CobrandoPorCajaPresenter.cs:línea 51
+   en POS.UserInterface.PantallaBase.ViewShown() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\PantallaBase.cs:línea 242
+   en POS.UserInterface.MainForm.CargarForm(IPantallaBase frm) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\MainForm.cs:línea 412
+   en POS.UserInterface.MainForm.SetearForm(IPantallaBase frm) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\MainForm.cs:línea 50
+   en POS.UserInterface.FormularioBase.Siguiente(IPantallaBase frm) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\FormularioBase.cs:línea 69
+   en POS.UserInterface.FormularioBase.AbrirPantalla(String idPantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\FormularioBase.cs:línea 361
+   en POS.UserInterface.MainForm.Menu_ItemSeleccionadoEvent(Object sender, ItemMenuSeleccionadoEventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\MainForm.cs:línea 265
+   en POS.Controls.Menu.OnItemSeleccionado(String idPantalla) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Menu.cs:línea 132
+   en POS.Controls.Menu.PerformItemSelect() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Menu.cs:línea 115
+   en POS.Controls.Menu.TreeView_DoubleClick(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Menu.cs:línea 189
+   en System.Windows.Forms.Control.OnDoubleClick(EventArgs e)
+   en System.Windows.Forms.TreeView.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 02:41:31 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 14/03/2014 02:41:32 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

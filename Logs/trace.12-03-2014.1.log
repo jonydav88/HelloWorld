@@ -1,0 +1,77 @@
+----------------------------------------
+Timestamp: 10/03/2014 02:34:27 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not proxy POS.Business.Login.LoginManager ---> Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor ---> System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.Data.SqlClient.SqlException: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   en NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   en NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   en NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   en NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   en NHibernate.Cfg.Configuration.BuildSessionFactory()
+   en uNhAddIns.SessionEasier.SessionFactoryProvider.Initialize()
+   en uNhAddIns.SessionEasier.SessionFactoryProvider.GetEnumerator()
+   en uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor..ctor(IEnumerable`1 sessionFactoryProvider)
+   en uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor..ctor(ISessionFactoryProvider sessionFactoryProvider)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   en System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   en System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.SingletonLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveServiceDependency(CreationContext context, ComponentModel model, DependencyModel dependency)
+   en Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context, Type[]& signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.Windsor.Proxy.AbstractProxyFactory.ObtainInterceptors(IKernel kernel, ComponentModel model, CreationContext context)
+   en Castle.Windsor.Proxy.DefaultProxyFactory.Create(IKernel kernel, Object target, ComponentModel model, CreationContext context, Object[] constructorArguments)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.SingletonLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments)
+   en Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service)
+   en Castle.MicroKernel.DefaultKernel.get_Item(Type service)
+   en Castle.Windsor.WindsorContainer.Resolve(Type service)
+   en Castle.Windsor.WindsorContainer.Resolve[T]()
+   en POS.InversionOfControl.WindsorDependencyResolver.Resolve[T]() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.InversionOfControl\WindsorDependencyResolver.cs:línea 29
+   en POS.InversionOfControl.IoC.Resolve[T]() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.InversionOfControl\IoC.cs:línea 19
+   en POS.UserInterface.Program.SplashScreen() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Program.cs:línea 167
+
+----------------------------------------

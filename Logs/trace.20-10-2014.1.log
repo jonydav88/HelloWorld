@@ -1,0 +1,175 @@
+----------------------------------------
+Timestamp: 17/10/2014 09:47:36 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not proxy POS.Business.Login.LoginManager ---> Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor ---> System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.Data.SqlClient.SqlException: Error relacionado con la red o específico de la instancia mientras se establecía una conexión con el servidor SQL Server. No se encontró el servidor o éste no estaba accesible. Compruebe que el nombre de la instancia es correcto y que SQL Server está configurado para admitir conexiones remotas. (provider: Proveedor de canalizaciones con nombre, error: 40 - No se pudo abrir una conexión con SQL Server)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject, Boolean withFailover)
+   en System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject, Boolean withFailover)
+   en System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   en System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   en System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   en System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   en System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   en System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   en System.Data.SqlClient.SqlConnection.Open()
+   en NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   en NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   en NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   en NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   en NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   en NHibernate.Cfg.Configuration.BuildSessionFactory()
+   en uNhAddIns.SessionEasier.SessionFactoryProvider.Initialize()
+   en uNhAddIns.SessionEasier.SessionFactoryProvider.GetEnumerator()
+   en uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor..ctor(IEnumerable`1 sessionFactoryProvider)
+   en uNhAddIns.SessionEasier.Conversations.NhConversationsContainerAccessor..ctor(ISessionFactoryProvider sessionFactoryProvider)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   en System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+   en System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   en System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.SingletonLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveServiceDependency(CreationContext context, ComponentModel model, DependencyModel dependency)
+   en Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context, Type[]& signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.Windsor.Proxy.AbstractProxyFactory.ObtainInterceptors(IKernel kernel, ComponentModel model, CreationContext context)
+   en Castle.Windsor.Proxy.DefaultProxyFactory.Create(IKernel kernel, Object target, ComponentModel model, CreationContext context, Object[] constructorArguments)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, Object[] arguments, Type[] signature)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   en Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Lifestyle.SingletonLifestyleManager.Resolve(CreationContext context)
+   en Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context)
+   en Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments)
+   en Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service)
+   en Castle.MicroKernel.DefaultKernel.get_Item(Type service)
+   en Castle.Windsor.WindsorContainer.Resolve(Type service)
+   en Castle.Windsor.WindsorContainer.Resolve[T]()
+   en POS.InversionOfControl.WindsorDependencyResolver.Resolve[T]() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.InversionOfControl\WindsorDependencyResolver.cs:línea 29
+   en POS.InversionOfControl.IoC.Resolve[T]() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.InversionOfControl\IoC.cs:línea 19
+   en POS.UserInterface.Program.SplashScreen() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Program.cs:línea 167
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/10/2014 09:48:31 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/10/2014 09:48:32 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/10/2014 09:51:07 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/10/2014 09:51:08 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/10/2014 09:54:16 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: NHibernate.Exceptions.GenericADOException: could not initialize a collection: [POS.Model.OperacionEnCaja.transaccionesMonetarias#1308344][SQL: SELECT transaccio0_.OperacioneEnCajaId as Operacio6_10_, transaccio0_.ID as ID10_, transaccio0_.ID as ID129_9_, transaccio0_.ActivoId as ActivoId129_9_, transaccio0_.CotizacionId as Cotizaci3_129_9_, transaccio0_.MedioDePagoId as MedioDeP4_129_9_, transaccio0_1_.BancoId as BancoId130_9_, case when transaccio0_1_.ID is not null then 1 when transaccio0_.ID is not null then 0 end as clazz_9_, activo1_.ID as ID133_0_, activo1_.Monto as Monto133_0_, activo1_.MonedaId as MonedaId133_0_, activo1_1_.NumeroCheque as NumeroCh2_134_0_, activo1_1_.BancoId as BancoId134_0_, activo1_1_.FechaIngreso as FechaIng4_134_0_, activo1_1_.FechaEmision as FechaEmi5_134_0_, activo1_1_.FechaCobro as FechaCobro134_0_, activo1_1_.FechaVencimiento as FechaVen7_134_0_, activo1_1_.Endosado as Endosado134_0_, activo1_1_.Diferido as Diferido134_0_, activo1_1_.Propio as Propio134_0_, activo1_1_.Estado as Estado134_0_, activo1_1_.ClienteId as ClienteId134_0_, activo1_1_.ComprobanteDeDeudaId as Comprob13_134_0_, activo1_1_.SucursalId as SucursalId134_0_, activo1_1_.SucursalActualId as Sucursa15_134_0_, activo1_3_.BancoId as BancoId136_0_, activo1_4_.BancoId as BancoId137_0_, activo1_4_.Numero as Numero137_0_, activo1_4_.CantidadCuotas as Cantidad4_137_0_, activo1_5_.TransitorioId as Transito2_138_0_, activo1_6_.ActivoPuntoHogarId as ActivoPu2_139_0_, activo1_6_.Puntos as Puntos139_0_, activo1_7_.CuitAgenteRetencion as CuitAgen2_140_0_, activo1_7_.FechaRetencion as FechaRet3_140_0_, activo1_7_.NumeroDeCertificado as NumeroDe4_140_0_, activo1_8_.RegimenDeRetencion as RegimenD2_141_0_, activo1_9_.TipoComprobante as TipoComp2_142_0_, activo1_9_.LetraComprobante as LetraCom3_142_0_, activo1_9_.ProvinciaId as Provinci4_142_0_, activo1_10_.ClienteId as ClienteId143_0_, case when activo1_8_.ID is not null then 8 when activo1_9_.ID is not null then 9 when activo1_1_.ID is not null then 1 when activo1_2_.ID is not null then 2 when activo1_3_.ID is not null then 3 when activo1_4_.ID is not null then 4 when activo1_5_.ID is not null then 5 when activo1_6_.ID is not null then 6 when activo1_7_.ID is not null then 7 when activo1_10_.ID is not null then 10 when activo1_.ID is not null then 0 end as clazz_0_, banco2_.ID as ID242_1_, banco2_.Codban as Codban242_1_, banco2_.Descripcion as Descripc3_242_1_, banco2_.CodCentral as CodCentral242_1_, banco3_.ID as ID242_2_, banco3_.Codban as Codban242_2_, banco3_.Descripcion as Descripc3_242_2_, banco3_.CodCentral as CodCentral242_2_, banco4_.ID as ID242_3_, banco4_.Codban as Codban242_3_, banco4_.Descripcion as Descripc3_242_3_, banco4_.CodCentral as CodCentral242_3_, transitori5_.ID as ID81_4_, transitori5_2_.EncabezadoId as Encabeza2_81_4_, transitori5_2_.ClienteId as ClienteId81_4_, transitori5_2_.Fecha as Fecha81_4_, transitori5_2_.FechaAnulacion as FechaAnu5_81_4_, transitori5_2_.Impreso as Impreso81_4_, transitori5_2_.Tipo as Tipo81_4_, transitori5_2_.TipoComprobanteAsociado as TipoComp8_81_4_, transitori5_2_.NumeroComprobanteAsociado as NumeroCo9_81_4_, transitori5_2_.IdClienteComprobanteAsociado as IdClien10_81_4_, transitori5_2_.IdSucursalCreacion as IdSucur11_81_4_, transitori5_2_.IdComprobanteAsociado as IdCompr12_81_4_, transitori5_2_.ExportadoBas as Exporta13_81_4_, transitori5_2_.Monto as Monto81_4_, transitori5_2_.MonedaId as MonedaId81_4_, transitori5_2_.Numero as Numero81_4_, transitori5_2_.ProcesadoEnCaja as Procesa17_81_4_, transitori5_2_.CreatedAt as CreatedAt81_4_, transitori5_2_.CreatedByWindowsUser as Created19_81_4_, transitori5_2_.CreatedByPOSUser as Created20_81_4_, transitori5_2_.UpdatedAt as UpdatedAt81_4_, transitori5_2_.UpdatedByWindowsUser as Updated22_81_4_, transitori5_2_.UpdatedByPOSUser as Updated23_81_4_, transitori5_.FormularioDevolucionId as Formular2_116_4_, transitori5_.Estado as Estado116_4_, transitori5_.ObservacionesUtilizadoEnSucursal as Observac4_116_4_, transitori5_.EvaluadoEnCaja as Evaluado5_116_4_, transitori5_.UtilizadoEnSucursalId as Utilizad6_116_4_, transitori5_.Concepto as Concepto116_4_, transitori5_.Monto as Monto116_4_, transitori5_.MonedaId as MonedaId116_4_, transitori5_.ComprobanteId as Comprob10_116_4_, transitori5_.Notas as Notas116_4_, transitori5_.PuedeUtilizarEnCaja as PuedeUt12_116_4_, transitori5_.VentaTransitorioId as VentaTr13_116_4_, ficha6_.ID as ID79_5_, ficha6_.Numero as Numero79_5_, ficha6_.Desde as Desde79_5_, ficha6_.Hasta as Hasta79_5_, ficha6_.Observaciones as Observac5_79_5_, ficha6_.PuedeUtilizarEnCaja as PuedeUti6_79_5_, provincia7_.ID as ID165_6_, provincia7_.Nombre as Nombre165_6_, provincia7_.TributaImpuesto as TributaI3_165_6_, provincia7_.PercibeIibb as PercibeI4_165_6_, provincia7_.MinimoNetoGravadoPercepcionIibb as MinimoNe5_165_6_, provincia7_.DetalleLegalIngresosBrutos as DetalleL6_165_6_, provincia7_.DetalleLegalNoTributaImpuesto as DetalleL7_165_6_, provincia7_.LeyendaPieFactura as LeyendaP8_165_6_, provincia7_.CodigoBas as CodigoBas165_6_, interdepos8_.ID as ID198_7_, interdepos8_1_.Fecha as Fecha198_7_, interdepos8_1_.NumeroBoleta as NumeroBo3_198_7_, interdepos8_1_.CuentaBancariaId as CuentaBa4_198_7_, interdepos8_1_.EnviadoABAS as EnviadoA5_198_7_, interdepos8_1_.FueAnulado as FueAnulado198_7_, interdepos8_1_.IdSucursalCreacion as IdSucurs7_198_7_, interdepos8_.Estado as Estado200_7_, interdepos8_.UsuarioId as UsuarioId200_7_, interdepos8_.ActivoInterdepositoId as ActivoIn4_200_7_, abstractme9_.ID as ID36_8_, abstractme9_.Tipo as Tipo36_8_, abstractme9_.ImputacionContable as Imputaci3_36_8_, abstractme9_.RequierePasarPorCredito as Requiere4_36_8_, abstractme9_.UtilizableCobroCuotas as Utilizab5_36_8_, abstractme9_.SeleccionablePorVendedor as Seleccio6_36_8_, abstractme9_1_.Nombre as Nombre38_8_, abstractme9_1_.AbreviacionPosNet as Abreviac3_38_8_, abstractme9_1_.CodigoBas as CodigoBas38_8_, abstractme9_1_.MedioDePagoBas as MedioDeP5_38_8_, abstractme9_3_.Recargo as Recargo40_8_, abstractme9_3_.AplicaAPrecioContado as AplicaAP3_40_8_, abstractme9_3_.AplicaAPrecioPromo as AplicaAP4_40_8_, abstractme9_4_.Recargo as Recargo41_8_, abstractme9_4_.AplicaAPrecioContado as AplicaAP3_41_8_, abstractme9_4_.AplicaAPrecioPromo as AplicaAP4_41_8_, abstractme9_5_.Recargo as Recargo42_8_, abstractme9_5_.AplicaAPrecioContado as AplicaAP3_42_8_, abstractme9_5_.AplicaAPrecioPromo as AplicaAP4_42_8_, abstractme9_6_.Recargo as Recargo43_8_, abstractme9_6_.AplicaAPrecioContado as AplicaAP3_43_8_, abstractme9_6_.AplicaAPrecioPromo as AplicaAP4_43_8_, abstractme9_7_.Recargo as Recargo44_8_, abstractme9_7_.AplicaAPrecioContado as AplicaAP3_44_8_, abstractme9_7_.AplicaAPrecioPromo as AplicaAP4_44_8_, abstractme9_8_.Nombre as Nombre45_8_, abstractme9_8_.Recargo as Recargo45_8_, abstractme9_8_.AplicaAPrecioContado as AplicaAP4_45_8_, abstractme9_8_.AplicaAPrecioPromo as AplicaAP5_45_8_, abstractme9_9_.Recargo as Recargo46_8_, abstractme9_10_.Recargo as Recargo47_8_, abstractme9_11_.Recargo as Recargo48_8_, abstractme9_11_.AplicaAPrecioContado as AplicaAP3_48_8_, abstractme9_11_.AplicaAPrecioPromo as AplicaAP4_48_8_, case when abstractme9_2_.ID is not null then 2 when abstractme9_3_.ID is not null then 3 when abstractme9_9_.ID is not null then 9 when abstractme9_10_.ID is not null then 10 when abstractme9_1_.ID is not null then 1 when abstractme9_4_.ID is not null then 4 when abstractme9_5_.ID is not null then 5 when abstractme9_6_.ID is not null then 6 when abstractme9_7_.ID is not null then 7 when abstractme9_8_.ID is not null then 8 when abstractme9_11_.ID is not null then 11 when abstractme9_.ID is not null then 0 end as clazz_8_ FROM TransaccionMonetaria transaccio0_ left outer join TransaccionMonetariaTarjeta transaccio0_1_ on transaccio0_.ID=transaccio0_1_.ID left outer join Activo activo1_ on transaccio0_.ActivoId=activo1_.ID left outer join ActivoCheque activo1_1_ on activo1_.ID=activo1_1_.ID left outer join ActivoEfectivo activo1_2_ on activo1_.ID=activo1_2_.ID left outer join ActivoDebito activo1_3_ on activo1_.ID=activo1_3_.ID left outer join ActivoTarjetaCredito activo1_4_ on activo1_.ID=activo1_4_.ID left outer join ActivoTransitorio activo1_5_ on activo1_.ID=activo1_5_.ID left outer join ActivoPuntoHogar activo1_6_ on activo1_.ID=activo1_6_.ID left outer join ActivoRetencion activo1_7_ on activo1_.ID=activo1_7_.ID left outer join ActivoGanancias activo1_8_ on activo1_.ID=activo1_8_.ID left outer join ActivoIibb activo1_9_ on activo1_.ID=activo1_9_.ID left outer join ActivoInterdeposito activo1_10_ on activo1_.ID=activo1_10_.ID left outer join Banco banco2_ on activo1_1_.BancoId=banco2_.ID left outer join Banco banco3_ on activo1_3_.BancoId=banco3_.ID left outer join Banco banco4_ on activo1_4_.BancoId=banco4_.ID left outer join Transitorio transitori5_ on activo1_5_.TransitorioId=transitori5_.ID left outer join ComprobanteNoFiscal transitori5_1_ on transitori5_.ID=transitori5_1_.ID left outer join Comprobante transitori5_2_ on transitori5_.ID=transitori5_2_.ID left outer join FichaPuntoHogar ficha6_ on activo1_6_.ActivoPuntoHogarId=ficha6_.ID left outer join Provincia provincia7_ on activo1_9_.ProvinciaId=provincia7_.ID left outer join Interdeposito interdepos8_ on activo1_.ID=interdepos8_.ActivoInterdepositoId left outer join DepositoBancario interdepos8_1_ on interdepos8_.ID=interdepos8_1_.ID left outer join MedioDePago abstractme9_ on transaccio0_.MedioDePagoId=abstractme9_.ID left outer join MedioDePagoTarjeta abstractme9_1_ on abstractme9_.ID=abstractme9_1_.ID left outer join MedioDePagoTarjetaCredito abstractme9_2_ on abstractme9_.ID=abstractme9_2_.ID left outer join MedioDePagoDebito abstractme9_3_ on abstractme9_.ID=abstractme9_3_.ID left outer join MedioDePagoEfectivo abstractme9_4_ on abstractme9_.ID=abstractme9_4_.ID left outer join MedioDePagoPuntoHogar abstractme9_5_ on abstractme9_.ID=abstractme9_5_.ID left outer join MedioDePagoCheque abstractme9_6_ on abstractme9_.ID=abstractme9_6_.ID left outer join MedioDePagoTransitorio abstractme9_7_ on abstractme9_.ID=abstractme9_7_.ID left outer join MedioDePagoRetencion abstractme9_8_ on abstractme9_.ID=abstractme9_8_.ID left outer join MedioDePagoGanancias abstractme9_9_ on abstractme9_.ID=abstractme9_9_.ID left outer join MedioDePagoIibb abstractme9_10_ on abstractme9_.ID=abstractme9_10_.ID left outer join MedioDePagoInterdepositos abstractme9_11_ on abstractme9_.ID=abstractme9_11_.ID WHERE transaccio0_.OperacioneEnCajaId=?] ---> System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   en System.Data.SqlClient.SqlDataReader.get_MetaData()
+   en System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   en System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   en System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   en System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   en NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   en NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   en NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en NHibernate.Loader.Loader.LoadCollection(ISessionImplementor session, Object id, IType type)
+   en NHibernate.Loader.Collection.CollectionLoader.Initialize(Object id, ISessionImplementor session)
+   en NHibernate.Persister.Collection.AbstractCollectionPersister.Initialize(Object key, ISessionImplementor session)
+   en NHibernate.Event.Default.DefaultInitializeCollectionEventListener.OnInitializeCollection(InitializeCollectionEvent event)
+   en NHibernate.Impl.SessionImpl.InitializeCollection(IPersistentCollection collection, Boolean writing)
+   en NHibernate.Collection.AbstractPersistentCollection.Initialize(Boolean writing)
+   en NHibernate.Collection.AbstractPersistentCollection.Read()
+   en NHibernate.Collection.AbstractPersistentCollection.ReadSize()
+   en NHibernate.Collection.PersistentSet.get_Count()
+   en System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   en POS.Model.OperacionEnCaja.get_TransaccionesMonetarias() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\OperacionEnCaja.cs:línea 41
+   en POS.Model.Caja.GetChequesEnSesionActiva() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Caja.cs:línea 176
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.CargarCheques() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 149
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.CargarVista() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 123
+   en POS.Presenter.Caja.RetiroDeFondosPresenter.OnViewReady() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\RetiroDeFondosPresenter.cs:línea 48
+   en POS.UserInterface.PopUpBase.ViewReady() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\PopUpBase.cs:línea 207
+   en POS.UserInterface.FormularioBase.PopUp(IPopUpBase popUpBase) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\FormularioBase.cs:línea 219
+   en POS.UserInterface.CobrandoPorCaja.BtnSalida_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\CobrandoPorCaja.cs:línea 200
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------

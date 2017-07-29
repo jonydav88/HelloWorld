@@ -1,0 +1,78 @@
+----------------------------------------
+Timestamp: 03/11/2014 01:42:17 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:42:18 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:43:26 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en POS.Presenter.Credito.Cliente.ModificandoDatosDeClientePresenter.MostrarInformacionPunto2() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\Cliente\ModificandoDatosDeClientePresenter.cs:línea 413
+   en POS.UserInterface.Credito.Cliente.CreandoClientes.TbcCliente_SelectedIndexChanged(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Credito\Cliente\CreandoClientes.cs:línea 4777
+   en System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   en System.Windows.Forms.TabControl.WmSelChange()
+   en System.Windows.Forms.TabControl.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:45:20 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:45:21 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:47:34 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 03/11/2014 01:47:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: srv-All 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

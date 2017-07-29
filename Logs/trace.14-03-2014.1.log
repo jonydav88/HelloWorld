@@ -1,0 +1,54 @@
+----------------------------------------
+Timestamp: 12/03/2014 05:21:04 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 12/03/2014 05:21:05 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 12/03/2014 05:26:37 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: System.ArgumentException: No se puede activar el control invisible o deshabilitado
+   en System.Windows.Forms.ContainerControl.SetActiveControlInternal(Control value)
+   en System.Windows.Forms.ContainerControl.SetActiveControl(Control ctl)
+   en System.Windows.Forms.ContainerControl.set_ActiveControl(Control value)
+   en POS.UserInterface.PopUpBase.ViewShown() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\PopUpBase.cs:línea 220
+
+----------------------------------------
+----------------------------------------
+Timestamp: 12/03/2014 07:53:34 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 12/03/2014 07:53:35 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv-POS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

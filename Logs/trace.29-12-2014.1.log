@@ -1,0 +1,181 @@
+----------------------------------------
+Timestamp: 24/12/2014 01:04:38 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 01:04:38 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 01:55:14 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 01:55:14 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:05:36 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: NHibernate.ADOException: could not execute query
+[ SELECT this_.ID as ID262_0_, this_.ArticuloId as ArticuloId262_0_, this_.Cantidad as Cantidad262_0_, this_.Fecha as Fecha262_0_, this_.EstadoOrigen as EstadoOr5_262_0_, this_.EstadoDestino as EstadoDe6_262_0_, this_.SucursalOrigenId as Sucursal7_262_0_, this_.DepositoOrigenId as Deposito8_262_0_, this_.SucursalDestinoId as Sucursal9_262_0_, this_.DepositoDestinoId as Deposit10_262_0_, this_.TipoMovimiento as TipoMov11_262_0_, this_.Observaciones as Observa12_262_0_, this_.Procesada as Procesada262_0_, this_.ComprobanteId as Comprob14_262_0_, this_.MotivoDeAjusteId as MotivoD15_262_0_ FROM MovimientoStockSumarizable this_ WHERE (this_.SucursalOrigenId = @p0 or this_.SucursalDestinoId = @p1) and this_.Procesada = @p2 ]
+Positional parameters:  #0>SucursalProxyd8cb39ec36d44538aee3f8c8293468be #1>SucursalProxyd8cb39ec36d44538aee3f8c8293468be #2>False
+[SQL: SELECT this_.ID as ID262_0_, this_.ArticuloId as ArticuloId262_0_, this_.Cantidad as Cantidad262_0_, this_.Fecha as Fecha262_0_, this_.EstadoOrigen as EstadoOr5_262_0_, this_.EstadoDestino as EstadoDe6_262_0_, this_.SucursalOrigenId as Sucursal7_262_0_, this_.DepositoOrigenId as Deposito8_262_0_, this_.SucursalDestinoId as Sucursal9_262_0_, this_.DepositoDestinoId as Deposit10_262_0_, this_.TipoMovimiento as TipoMov11_262_0_, this_.Observaciones as Observa12_262_0_, this_.Procesada as Procesada262_0_, this_.ComprobanteId as Comprob14_262_0_, this_.MotivoDeAjusteId as MotivoD15_262_0_ FROM MovimientoStockSumarizable this_ WHERE (this_.SucursalOrigenId = @p0 or this_.SucursalDestinoId = @p1) and this_.Procesada = @p2] ---> System.Data.SqlClient.SqlException: Valor de tiempo de espera caducado. El período de tiempo de espera caducó antes de completar la operación o el servidor no responde.
+   en System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   en System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   en System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   en System.Data.SqlClient.SqlDataReader.ReadInternal(Boolean setTimeout)
+   en System.Data.SqlClient.SqlDataReader.Read()
+   en NHibernate.Driver.NHybridDataReader.Read()
+   en NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   en NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   en NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   en NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   en NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   en NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   en NHibernate.Impl.CriteriaImpl.List(IList results)
+   en NHibernate.Impl.CriteriaImpl.List[T]()
+   en POS.DataAccess.DAO.Stock.MovimientoStockSumarizableDao.GetMovimientosSinProcesar(Sucursal sucursal) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.DataAccess\DAO\Stock\MovimientoStockSumarizableDao.cs:línea 38
+   en POS.Business.Stock.MovimientoStockSumarizableManager.GetMovimientosSinProcesar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\Stock\MovimientoStockSumarizableManager.cs:línea 39
+   en IMovimientoStockSumarizableManagerProxy7e405b1d09fe4a33989d37a90cfe9800.InvocationGetMovimientosSinProcesar_1.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en IMovimientoStockSumarizableManagerProxy7e405b1d09fe4a33989d37a90cfe9800.GetMovimientosSinProcesar()
+   en POS.Presenter.Ventas.Validadores.CreandoPresupuestoValidador.ValidarStockLocal(Venta presupuesto, CantidadesDeVenta cantidadesOriginales) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\Validadores\CreandoPresupuestoValidador.cs:línea 36
+   en POS.Presenter.Ventas.CreandoPresupuestoPresenter.Siguiente() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\CreandoPresupuestoPresenter.cs:línea 283
+   en POS.UserInterface.Ventas.CreandoPresupuesto.Siguiente() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\CreandoPresupuesto.cs:línea 696
+   en POS.UserInterface.Ventas.CreandoPresupuesto.BtnSiguiente_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\CreandoPresupuesto.cs:línea 532
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:06:28 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en POS.Presenter.Ventas.ConsultandoArticulosPresenter.BusquedaFinalizada() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\ConsultandoArticulosPresenter.cs:línea 548
+   en POS.Presenter.Ventas.ConsultandoArticulosPresenter.<.ctor>b__1(Object sender, RunWorkerCompletedEventArgs args) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\ConsultandoArticulosPresenter.cs:línea 43
+   en System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   en System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:07:37 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en POS.Presenter.Ventas.ConsultandoArticulosPresenter.BusquedaFinalizada() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\ConsultandoArticulosPresenter.cs:línea 548
+   en POS.Presenter.Ventas.ConsultandoArticulosPresenter.<.ctor>b__1(Object sender, RunWorkerCompletedEventArgs args) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Ventas\ConsultandoArticulosPresenter.cs:línea 43
+   en System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   en System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:09:28 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:09:29 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:31:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:31:01 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:48:09 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 24/12/2014 02:48:09 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

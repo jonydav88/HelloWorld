@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <button title="V&amp;entas" modulo="Ventas" icono="icoVentasMenu.png">
+    <folder title="Presupuestos">
+      <item title="Crear" idPantalla="POS.UserInterface.Ventas.ConsultandoArticulos" icono="icoCrear.png"/>
+      <item title="Crear - Para Empresas" idPantalla="POS.UserInterface.Ventas.ConsultandoArticulosParaEmpresas" icono="icoCrear.png"/>
+      <item title="Crear - Artículos Celulares" idPantalla="POS.UserInterface.Ventas.ConsultandoArticulosCelulares" icono="icoCrear.png"/>
+      <item title="Regalo de casamiento" idPantalla="POS.UserInterface.Ventas.ConsultandoListasDeCasamiento" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Ventas.ConsultandoPresupuestosVigentes" icono="icoConsultar.png"/>    
+    </folder>    
+    <folder title="Artículos">
+    <item title="Consultar" idPantalla="POS.UserInterface.Ventas.ConsultandoSoloArticulos" icono="icoConsultar.png"/>
+    </folder>
+    
+    <folder title="Celulares">
+      <item title="Consultar" idPantalla="POS.UserInterface.Ventas.ConsultandoSoloCelulares" icono="icoConsultar.png"/>
+    </folder>
+    
+    <folder title="Casamientos" >
+      <item title="Crear lista de Casamiento" idPantalla="POS.UserInterface.Ventas.CreandoListaDeCasamiento" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Ventas.ConsultandoModificandoListasDeCasamiento" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Autorizaciones">
+      <item title="Consultar" idPantalla="POS.UserInterface.Autorizaciones.ConsultandoAutorizaciones" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Fichas Puntos" >
+      <item title="Configurar" idPantalla="POS.UserInterface.Administracion.PuntoHogar.ConfiguracionFichaPuntoHogar" icono="icoConfigurar.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Administracion.PuntoHogar.EstadisticasPremiosPuntHogar" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Reportes" >
+      <item title="Ventas" idPantalla="POS.UserInterface.Ventas.Reportes.ConsultandoVentas" icono="icoReportes.png"/>
+    </folder>
+  </button>
+
+  <button title="C&amp;aja" modulo="Caja" icono="icoCajaMenu.png">
+    <item title="Abrir" idPantalla="POS.UserInterface.Caja.AperturaDeCaja" icono="icoAbrirCaja.png"/>
+    <item title="Hacer Arqueo" idPantalla="POS.UserInterface.Caja.ArqueoDeCaja" icono="icoHacerArqueo.png"/>
+    <folder title="Cobrar" >
+      <item title="Presupuestos" idPantalla="POS.UserInterface.CobrandoPorCaja" icono="icoCobrar.png"/>
+      <item title="Cuotas y Deudas" idPantalla="POS.UserInterface.Caja.CancelandoCuotaDeCredito.SeleccionandoCliente" icono="icoCobrar.png"/>
+    </folder>
+    <item title="Hacer Cierre" idPantalla="POS.UserInterface.Caja.RetiroDeFondoFijo" icono="icoCerrarCaja.png"/>   
+    <folder title="Reportes" >
+      <item title="Último cierre" idPantalla="POS.UserInterface.Caja.UltimoCierre" icono="icoReportes.png"/>
+      <item title="Z" idPantalla="POS.UserInterface.Caja.Reportes.RealizandoReporteZ" icono="icoReportes.png"/>
+      <item title="Estado de Cajas" idPantalla="POS.UserInterface.Caja.Reportes.ReporteEstadoDeCajas" icono="icoReportes.png"/>
+      <item title="Movimientos Varios" idPantalla="POS.UserInterface.Caja.Reportes.GenerandoReporteMovimientosVarios" icono="icoReportes.png"/>
+    </folder>
+  </button>
+
+  <button title="A&amp;dministración" modulo="Administracion" icono="icoAdminMenu.png">
+    <folder title="Cheques" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Administracion.ConsultandoCheques" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Depósitos Bancarios" >
+      <item title="Registrar" idPantalla="POS.UserInterface.Administracion.RegistrandoDepositos" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Administracion.ConsultandoComprobantesDepositosBancarios" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Caja de Administración" >
+      <item title="Cambio de Monedas" idPantalla="POS.UserInterface.Administracion.CambiandoMonedasDeCajaDeAdministracion" icono="icoCobrar.png"/>
+      <item title="Transferencia de Dinero" idPantalla="POS.UserInterface.Administracion.TransfiriendoDineroDeCajaDeAdministracion" icono="icoCobrar.png"/>
+    </folder>
+    <folder title="Reportes" >
+      <item title="Auditoría" idPantalla="POS.UserInterface.Administracion.ConsultandoInformacionDeAuditoria" icono="icoReportes.png"/>
+      <item title="Caja de administración" idPantalla="POS.UserInterface.Administracion.ConsultandoCajaDeAdministracion" icono="icoReportes.png"/>
+    </folder>
+  </button>
+
+  <button title="C&amp;réditos" modulo="Créditos" icono="icoCreditosMenu.png">    
+    <item title="Crear/Editar" idPantalla="POS.UserInterface.Credito.SeleccionandoPresupuesto" icono="icoCrear.png"/>
+    <item title="Consultar" idPantalla="POS.UserInterface.Credito.ConsultandoCreditos" icono="icoConsultar.png"/>    
+    <folder title="Medios de Pago">
+      <item title="Ingresar" idPantalla="POS.UserInterface.Credito.AgregandoMediosDePago" icono="icoCrear.png"/>
+    </folder>    
+    <folder title="Nota de Crédito">
+      <item title="Crear por Concepto" idPantalla="POS.UserInterface.Credito.NotasDeCredito.GenerandoNotaDeCreditoPorConcepto" icono="icoCrear.png"/>
+      <item title="Crear por Devolución" idPantalla="POS.UserInterface.Credito.NotasDeCredito.BandejaEntradaNotasDeCredito" icono="icoCrear.png"/>
+    </folder>    
+    <folder title="Nota de Débito">
+      <item title="Crear por Concepto" idPantalla="POS.UserInterface.Credito.NotasDeDebito.GenerandoNotaDeDebitoPorConcepto" icono="icoCrear.png"/>
+    </folder>    
+    <folder title="FDG" >      
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.DevolucionMercaderia.RecepcionDevolucionesDeGarantia" icono="icoCrear.png"/>
+    </folder>
+    <folder title="Contratos de Garantía" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Credito.ConsultandoContratosDeGarantia" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Pagos Externos" >   
+      <item title="Registrar" idPantalla="POS.UserInterface.Credito.RecibiendoPagosExternos" icono="icoCrear.png"/>
+    </folder>
+    <folder title="Transitorios">
+      <item title="Emitir" idPantalla="POS.UserInterface.Caja.CreandoTransitorio" icono="icoCrear.png"/>
+      <item title="Emitir sin cobrar" idPantalla="POS.UserInterface.Credito.CreandoTransitorioSinPagar" icono="icoCrear.png"/>
+       <item title="Consultar" idPantalla="POS.UserInterface.Credito.Comprobantes.ConsultandoComprobantesTransitorio" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="Cobros porCuenta">
+      <item title="Crear" idPantalla="POS.UserInterface.Caja.CobroPorCuenta" icono="icoCrear.png"/>
+    </folder>
+
+    <folder title="Agenda">
+      <item title="Consultar" idPantalla="POS.UserInterface.Credito.Cliente.ListandoTareasPendientes" icono="icoConsultar.png"/>
+    </folder>    
+    <folder title="Recibos">     
+      <item title="Consultar" idPantalla="POS.UserInterface.Credito.Comprobantes.ConsultandoComprobantesRecibos" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Comprobantes Fiscales">
+      <item title="Consultar" idPantalla="POS.UserInterface.Credito.Comprobantes.ConsultandoComprobantes" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Reportes" >
+      <item title="Créditos" idPantalla="POS.UserInterface.Credito.Reportes.GenerandoReportesDeCreditos" icono="icoReportes.png"/>
+    </folder>
+    <folder title="Interdepósitos">
+      <item title="Consultar" idPantalla="POS.UserInterface.Credito.ConsultandoInterdepositos" icono="icoConsultar.png"/>
+    </folder>
+  </button>
+
+  <button title="C&amp;lientes" modulo="Clientes" icono="icoClientesMenu.png">
+    <item title="Crear" idPantalla="POS.UserInterface.Credito.Cliente.CreandoClientes" icono="icoCrear.png"/>
+    <item title="Consultar" idPantalla="POS.UserInterface.Credito.Cliente.ConsultandoClientes" icono="icoConsultar.png"/>
+    <folder title="Reporte">
+    <item title="Generar" idPantalla="POS.UserInterface.Credito.Cliente.Reportes.GenerandoReporteDeClientes" icono="icoReportes.png"/>
+    </folder>
+  </button>
+
+  <button title="S&amp;tock" modulo="Stock" icono="icoStockMenu.png">
+    <folder title="Artículos" >
+      <item title="Ingresar" idPantalla="POS.UserInterface.Stock.IngresandoMercaderiaADeposito" icono="icoIngresar.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoStockDeArticulos" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="FDM" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.DevolucionMercaderia.RecepcionDeDevoluciones" icono="icoCrear.png"/>
+    </folder>
+
+    <folder title="Hoja de ruta" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.CreandoHojaDeRuta" icono="icoCrear.png"/>
+    </folder>
+
+    <folder title="Inventarios" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.TomandoInventarioRecuento" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoInventarios" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="Movimientos" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoMovimientosDeArticulo" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="NPS" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.NPS.CreandoNPS" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.NPS.ConsultandoNPS" icono="icoConsultar.png"/>
+    </folder>
+    
+    <folder title="Pedidos" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.CreandoPedidos" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoPedidos" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="Proveedores" >
+      <item title="Ingresar" idPantalla="POS.UserInterface.Stock.IngresandoMercaderiaProveedor" icono="icoIngresar.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoRemitosProveedores" icono="icoConsultar.png"/>
+      <item title="Lotes" idPantalla="POS.UserInterface.Stock.ConsultandoLotesDeArticulos" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Remitos" >
+      <item title="Remitar" idPantalla="POS.UserInterface.Stock.RegistrandoEnvioDeArticulos" icono="icoEnviar.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoComprobantesRemitos" icono="icoConsultar.png"/>      
+    </folder>
+
+    <folder title="Remitos Pendientes" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ListandoRemitosPendientesDeEntrega" icono="icoConsultar.png"/>
+    </folder>
+
+    <folder title="Reportes" >
+      <item title="Stock a Reponer" idPantalla="POS.UserInterface.Stock.GenerandoReporteDeStockAReponer" icono="icoReportes.png"/>
+      <item title="Listado de Existencia de Mercadería" idPantalla="POS.UserInterface.Stock.GenerandoReporteListaExistenciaMercaderia" icono="icoReportes.png"/>
+    </folder>
+
+    <folder title="Reservas" >
+      <item title="Reservar" idPantalla="POS.UserInterface.Stock.ReservandoArticulos" icono="icoReservar.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Stock.ConsultandoReservasDeArticulos" icono="icoConsultar.png"/>
+    </folder>
+    
+    <folder title="Servicio Técnico" >
+      <item title="Crear" idPantalla="POS.UserInterface.Stock.ServicioTecnico.CreacionDeCasoDeServicioTecnico" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="" icono="icoConsultar.png"/>
+    </folder>
+
+  </button>
+
+  <button title="C&amp;onfiguración" modulo="Configuracion" icono="icoConfigMenu.png">
+    <folder title="Usuarios" >
+      <item title="Crear" idPantalla="POS.UserInterface.Configuracion.Usuario.CreandoUsuarios" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.Usuario.ConsultandoUsuarios" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Roles" >
+      <item title="Crear" idPantalla="POS.UserInterface.Configuracion.Permisos.CreandoRolDeUsuario" icono="icoCrear.png"/>
+      <item title="Asignar" idPantalla="POS.UserInterface.Configuracion.Permisos.AsignandoRolesAUsuarios" icono="icoDefault.png"/>
+      <item title="Consultar Permisos" idPantalla="POS.UserInterface.Configuracion.Permisos.ConsultandoPermisosDeRol" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Sucursales" >
+      <item title="Crear" idPantalla="POS.UserInterface.Sucursal.CreandoSucursalNombreDireccion" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Sucursal.ConsultandoSucursal" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Cajas" >
+      <item title="Crear" idPantalla="POS.UserInterface.Configuracion.Caja.CreandoCaja" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.Caja.ConsultandoModificandoCaja" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Depósito" >
+      <item title="Crear" idPantalla="POS.UserInterface.Configuracion.Depositos.CreandoDeposito" icono="icoCrear.png"/>
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.Depositos.ConsultandoDepositos" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Monedas y cotizaciones" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.MonedasYCotizaciones.MonedasYCotizaciones" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Terminales" > 
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.Terminales.ConsultandoTerminales" icono="icoConsultar.png"/>
+    </folder>
+    <folder title="Promociones" >
+      <item title="Consultar" idPantalla="POS.UserInterface.Configuracion.PromocionesTarjetasDeCredito.ConsultandoPromocionesTarjetasDeCredito" icono="icoConsultar.png"/>
+    </folder>
+  </button>  
+
+  <button title="I&amp;mpuestos" modulo="Impuestos" icono="icoImpuestosMenu.png">     
+    <folder title="Reportes">
+      <item title="IVA Ventas" idPantalla="POS.UserInterface.Impuestos.EmitiendoLibroDeIvaVentas" icono="icoReportes.png"/>
+      <item title="Impuestos Internos" idPantalla="POS.UserInterface.Impuestos.GenerandoReporteDeImpuestosInternos" icono="icoReportes.png"/>
+      <item title="Diferimiento de IVA" idPantalla="POS.UserInterface.Impuestos.GenerandoReporteDeDiferimientoDeIva" icono="icoReportes.png"/>
+    </folder>    
+  </button>
+</root>

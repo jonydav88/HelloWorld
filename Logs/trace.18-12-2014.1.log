@@ -1,0 +1,134 @@
+----------------------------------------
+Timestamp: 17/12/2014 02:26:11 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 02:26:12 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 02:27:52 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en POS.Model.Venta.ComputaInteres() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Venta.cs:línea 1031
+   en POS.Model.Venta.GetInteresesContenidos() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Venta.cs:línea 1015
+   en POS.Model.Venta.get_TotalVenta() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Model\Venta.cs:línea 335
+   en POS.Business.Proxy.Cobrable.CobrableVenta.MontoACobrar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business.Proxy\Cobrable\CobrableVenta.cs:línea 104
+   en POS.Presenter.Credito.AsignandoPropuestaDePagoPresenter.ActualizarMontosPropuestaDePago() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\AsignandoPropuestaDePagoPresenter.cs:línea 315
+   en POS.Presenter.Credito.AsignandoPropuestaDePagoPresenter.RefrescarYMostrar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\AsignandoPropuestaDePagoPresenter.cs:línea 278
+   en POS.Presenter.Credito.AsignandoPropuestaDePagoPresenter.OnViewShown() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\AsignandoPropuestaDePagoPresenter.cs:línea 62
+   en POS.Presenter.Credito.AsignandoPropuestaDePagoPresenter..ctor(IAsignandoPropuestaDePago view, ICobrable cobrable, Boolean pagaHoyOAnticipo) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Credito\AsignandoPropuestaDePagoPresenter.cs:línea 46
+   en POS.UserInterface.Controles.Credito.AsignandoPropuestaDePago.InicializarUserControl(ICobrable cobrable) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Controles\Crédito\AsignandoPropuestaDePago.cs:línea 311
+   en POS.UserInterface.Ventas.CreandoPresupuesto..ctor(Boolean creandoPresupuesto, Boolean paraEmpresas, Venta presupuesto) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\CreandoPresupuesto.cs:línea 51
+   en POS.UserInterface.Ventas.ConsultandoArticulos.CrearPresupuestoYRedireccionar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\ConsultandoArticulos.cs:línea 357
+   en POS.UserInterface.Ventas.ConsultandoArticulos.Aceptar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\ConsultandoArticulos.cs:línea 330
+   en POS.UserInterface.Ventas.ConsultandoArticulos.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Ventas\ConsultandoArticulos.cs:línea 563
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 06:06:45 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 06:06:45 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 07:38:25 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 07:38:26 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 07:47:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 17/12/2014 07:47:02 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18/12/2014 12:57:07 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18/12/2014 12:57:08 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------

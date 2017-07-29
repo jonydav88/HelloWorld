@@ -1,0 +1,420 @@
+----------------------------------------
+Timestamp: 09/02/2015 07:30:26 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:30:27 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.CommunicationException: Error de TCP (10013: Intento de acceso a un socket no permitido por sus permisos de acceso) al escuchar en el extremo IP=0.0.0.0:4000. ---> System.Net.Sockets.SocketException: Intento de acceso a un socket no permitido por sus permisos de acceso
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:30:27 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:30:27 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:40:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800412D3): No se puede reconocer la respuesta del POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:40:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:40:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:48:43 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 09/02/2015 07:48:43 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:23:35 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:23:42 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:23:52 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:24:29 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:24:29 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 12:25:13 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:09:19 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:09:20 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.CommunicationException: Error de TCP (10013: Intento de acceso a un socket no permitido por sus permisos de acceso) al escuchar en el extremo IP=0.0.0.0:4000. ---> System.Net.Sockets.SocketException: Intento de acceso a un socket no permitido por sus permisos de acceso
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:09:20 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:09:20 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:16:11 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800412D3): No se puede reconocer la respuesta del POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:16:12 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 01:16:14 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 04:59:05 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 04:59:06 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Error al inicializar el servicio Servicios. El mensaje generado es System.ServiceModel.CommunicationException: Error de TCP (10013: Intento de acceso a un socket no permitido por sus permisos de acceso) al escuchar en el extremo IP=0.0.0.0:4000. ---> System.Net.Sockets.SocketException: Intento de acceso a un socket no permitido por sus permisos de acceso
+   en System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   en System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   en System.ServiceModel.Channels.ConnectionAcceptor.StartAccepting()
+   en System.ServiceModel.Channels.ConnectionDemuxer.StartDemuxing(OnViaDelegate viaDelegate)
+   en System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   en System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   en System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   en System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   en System.ServiceModel.Channels.CommunicationObject.Open()
+   en POS.ServiceHost.Host`1.StartServiceDynamic(String address, Int32 port) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.Server\POS.ServiceHost\Host.cs:línea 70
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 04:59:06 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: Inicializando Host de servicios Servicios
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 04:59:06 p.m.
+Category: Information
+Severity: Information
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: El servicio Servicios se inició correctamente
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 05:05:34 p.m.
+Category: Fatal
+Severity: Critical
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en POS.Business.CreditoPersonal.CreditoManager.GenerarRemitos(Venta venta) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\CreditoPersonal\CreditoManager.cs:línea 1339
+   en POS.Business.CreditoPersonal.CreditoManager.RemitosAImprimir(List`1 cuotas) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\CreditoPersonal\CreditoManager.cs:línea 1324
+   en POS.Business.CreditoPersonal.CreditoManager.ImprimirRemitosYAjustarStock(CobrableCuotas cobrableCuotas) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Business\CreditoPersonal\CreditoManager.cs:línea 779
+   en ICreditoManagerProxyb90d7b639f5b456986e43231616f30a5.InvocationImprimirRemitosYAjustarStock_8.InvokeMethodOnTarget()
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en uNhAddIns.CastleAdapters.AutomaticConversationManagement.ConversationInterceptor.Intercept(IInvocation invocation)
+   en Castle.DynamicProxy.AbstractInvocation.Proceed()
+   en ICreditoManagerProxyb90d7b639f5b456986e43231616f30a5.ImprimirRemitosYAjustarStock(CobrableCuotas cobrableCuotas)
+   en POS.Presenter.Caja.CobrandoPorCajaDetallePresenter.Cobrar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\CobrandoPorCajaDetallePresenter.cs:línea 1024
+   en POS.Presenter.Caja.CobrandoPorCajaDetallePresenter.ProcesarOperacion() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Presenter\Caja\CobrandoPorCajaDetallePresenter.cs:línea 269
+   en POS.UserInterface.Caja.CobrandoPorCajaDetalle.Aceptar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\CobrandoPorCajaDetalle.cs:línea 944
+   en POS.UserInterface.Caja.CobrandoPorCajaDetalle.BtnAceptar_Click(Object sender, EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.UserInterface\Caja\CobrandoPorCajaDetalle.cs:línea 809
+   en System.Windows.Forms.Control.OnClick(EventArgs e)
+   en System.Windows.Forms.Button.OnClick(EventArgs e)
+   en POS.Controls.Button.OnClick(EventArgs e) en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Controls\Button.cs:línea 215
+   en System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   en System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   en System.Windows.Forms.Control.WndProc(Message& m)
+   en System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   en System.Windows.Forms.Button.WndProc(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   en System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   en System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 05:06:57 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800412D3): No se puede reconocer la respuesta del POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 05:07:01 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/02/2015 05:07:03 p.m.
+Category: Error
+Severity: Error
+Machine: MAURICIO
+Servidor: Srv2-CLS 
+
+Message: System.Runtime.InteropServices.COMException (0x800411A1): No se ha inicializado el POS
+   en appc.POSClass.Inicializar()
+   en POS.Commons.PosNet.PosNetSession.Inicializar() en e:\Ultima_Version_POS\BackPreMigracion\source-Testing\Lucaioli.POS\POS.Commons.PosNet\PosNetSession.cs:línea 91
+
+----------------------------------------

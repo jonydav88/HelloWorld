@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory name="uNhAddIns">
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <property name="dialect">NHibernate.Dialect.MsSql2005Dialect</property>
+    <property name="connection.connection_string">Data Source=srv-pos; Initial Catalog=lucaioli_POS_Ariel;User ID=lucaioli;Password=Lucaioli</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="proxyfactory.factory_class">NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle</property>
+    <property name="current_session_context_class">uNhAddIns.SessionEasier.Conversations.ThreadLocalConversationalSessionContext, uNhAddIns</property>
+
+    <property name="cache.provider_class">NHibernate.Caches.SysCache2.SysCacheProvider, NHibernate.Caches.SysCache2</property>    <!--Para cache-->    
+    <property name="cache.use_second_level_cache">true</property> <!--Para cache-->
+    <property name="cache.use_query_cache" >true</property> <!--Para cache-->
+
+    <mapping assembly="POS.DataAccess" />
+
+    <!--Para auditoría de las entidades-->    
+    <event type="pre-update">
+      <listener class="POS.DataAccess.AuditEventListener, POS.DataAccess"/>
+    </event>
+    <event type="pre-insert">
+      <listener class="POS.DataAccess.AuditEventListener, POS.DataAccess" />  
+    </event>
+    <!--Para auditoría de las entidades-->
+
+    <!-- Para setear automaticamente la relacion que algunas entidades tiene con Sucursal con fines de replicacion. -->
+    <event type="save">
+      <listener class="POS.DataAccess.RelacionSucursalEventListener, POS.DataAccess"/>
+    </event>
+    <event type="save-update">
+      <listener class="POS.DataAccess.RelacionSucursalEventListener, POS.DataAccess"/>
+    </event>
+    <!-- Para setear automaticamente la relacion que algunas entidades tiene con Sucursal con fines de replicacion. -->
+
+  </session-factory>
+</hibernate-configuration>
+
